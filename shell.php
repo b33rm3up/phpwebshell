@@ -24,7 +24,7 @@
         <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
         <h3>Command Output</h3>
         <?php if (isset($cmd)): ?>
-            <p><?php htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?></p>
+            <p><?php echo nl2br(htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8')); ?></p>
         <?php else: ?>
             <p>Nothing to Display!</p>
         <?php endif; ?>
